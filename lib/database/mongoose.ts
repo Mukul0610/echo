@@ -28,7 +28,7 @@ export const connectToDatabase = async () => {
   // If there's no promise of a connection, create a new connection promise.
   if (!cached.promise) {
     cached.promise = mongoose.connect(MONGODB_URL, {
-      dbName: 'sponsorship',
+      dbName: 'Echo',
       bufferCommands: false, // Disable buffering of commands.
     });
   }
